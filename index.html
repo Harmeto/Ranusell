@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Carousel Template · Bootstrap v5.1</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    <link rel="icon" href="images.png">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Ranusel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Casita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pa arribita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Boton en mantenimiento</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Apachurre Aquí</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                    <img src="cat.jpg" alt="gatito">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+
+                            <h1>Squish that cat!</h1>
+                            <p>All you need to know is squish that cat</p>
+                            <p><a class="btn btn-lg btn-primary" href="https://youtu.be/5jKZ9KGtee0" target="_blank" rel="noopener noreferrer">Squish it!</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                    <img src="frog4.jpg" alt="frog">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>¿Cuánto sabes sobre ranas?</h1>
+                            <p>No te imaginas cuán peculiares pueden llegar a ser las ranas ¿Quieres averiguarlo? En este test podrás descubrir su fascinante mundo al mismo tiempo que pones a prueba tus conocimientos.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Click para mas Ranas</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                    <img src="doggo.jfif" alt="doggo">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Tambien tenemos perritos!</h1>
+                            <p>Tenemos datos curiosos sobre perritos, sus razas y cosas que debes saber.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Saber mas sobre perritos</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+  ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><image xlink:href="frog1.jpg" /><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+
+                    <h2>Rannas</h2>
+                    <p>Su piel es muy permeable y por eso puede desempeñar un papel importante en el intercambio de gases respiratorios, oxígeno y dióxido de carbono</p>
+                    <p><a class="btn btn-secondary" href="#featurette-divider1">Aprender mas sobre Ranas &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><image xlink:href="frog2.jpg" /><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+
+                    <h2>Dizfraces</h2>
+                    <p>Tenemos ranas disfrazadas para más placer, busca en nuestro local disfraces para tus ranas y poder personalizarlas como tú desees.</p>
+                    <br>
+                    <p><a class="btn btn-secondary" href="#featurette-heading2">View details &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><image xlink:href="frog3.jpg" /><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+
+                    <h2>Ejercicio</h2>
+                    <p>Tener animales en casa no es solo para que estén ahí sin hacer nada, por ello debes de hacer que tu mascota se ejercite ya sea simulando cazar o jugando con ellos.</p>
+
+                    <p><a class="btn btn-secondary" href="#featurette-divider3">Apachurrale al click &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr id="featurette-divider1">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Dizfraces de ranas!<span class="text-muted"> Si, por lo que vinieron!</span></h2>
+                    <p class="lead">Dizfraza a tu rana para que sea el terror del vecindario! Aprovecha que son pequeñas!</p>
+                    <p><a class="btn btn-secondary" href="https://youtu.be/m-HPAQdqpTg" target="_blank" rel="noopener noreferrer">Ver mas! &raquo;</a></p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><image xlink:href="froggg.jpg" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+
+                </div>
+            </div>
+
+            <hr id="featurette-heading2">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Como prometimos, perritos! <span class="text-muted">Datos Curiosos</span></h2>
+                    <p class="lead">Los perros nacen sordos y ciegos. La nariz de los perros puede llegar a tener hasta 300 millones de receptores olfativos. Las papilas gustativas de los perros varían de 1,700 a 2,000 versus las casi 10,000 papilas gustativas que tenemos
+                        los humanos.</p>
+                    <p><a class="btn btn-secondary" href="https://youtu.be/Se47tkmvwRw" target="_blank" rel="noopener noreferrer">Ver mas! &raquo;</a></p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><image xlink:href="dog2.jpg" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+
+                </div>
+            </div>
+
+            <hr id="featurette-divider3">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Importante que tu mascota se ejercite! </h2>
+                    <p class="lead">El ejercicio en nuestras mascotas cubre una serie de necesidades vitales para brindarle una buena vida: fortalece su cuerpo, agiliza su mente, refuerza el vínculo con su dueño y previene enfermedades.</p>
+                    <p><a class="btn btn-secondary" href="https://youtu.be/TFSKQdOkjOQ" target="_blank" rel="noopener noreferrer">Ver mas! &raquo;</a></p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><image xlink:href="froggies.jfif" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+
+                </div>
+
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div>
+        <div class="formulario">
+            <h1>Registrese para mas Ranas</h1>
+            <div class="form-group">
+                <label for="Registro">
+                Ingrese su Email
+            </label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted"><b>Juramos solemnemente que no enviaremos ranas.</b></small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Ud apriete noma es seguro</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </div>
+        </div>
+        <br><br>
+        <!-- /.container -->
+
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Frog to top</a></p>
+            <p>&copy; 2017–2021 Frogmpany, Inc. &middot; <a href="#">Froggacy</a> &middot; <a href="#">Frogms</a></p>
+        </footer>
+    </main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
